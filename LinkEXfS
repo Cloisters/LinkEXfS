@@ -1,0 +1,29 @@
+a = '''
+
+
+.____    .__        __    _______________  ___ _____  _________
+|    |   |__| ____ |  | __\_   _____/\   \/  // ____\/   _____/
+|    |   |  |/    \|  |/ / |    __)_  \     /\   __\ \_____  \ 
+|    |___|  |   |  \    <  |        \ /     \ |  |   /        \
+|_______ \__|___|  /__|_ \/_______  //___/\  \|__|  /_______  /
+        \/       \/     \/        \/       \_/              \/ 
+'''                                                               
+                                                               
+import requests
+from bs4 import BeautifulSoup
+
+url = input("Enter the website URL: ") # Get the website URL from user input
+response = requests.get(url) # Send a GET request to the website URL
+soup = BeautifulSoup(response.text, 'html.parser') # Create a BeautifulSoup object from the HTML content
+
+# Find all 'a' tags (links) in the HTML content
+links = soup.find_all('a')
+
+# Loop through all links and print the href attribute
+for link in links:
+    print(link.get('href'))
+
+                                                               
+                                                               
+                                                               
+
