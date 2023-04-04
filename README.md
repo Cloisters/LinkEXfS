@@ -12,7 +12,7 @@ Requirements
 Installation
 
     Clone this repository: git clone https://github.com/your_username/linkEXFS.git
-    Install the required libraries: pip install -r requirements.txt
+    Install the required libraries: bash setup.sh
 
 Usage
 
