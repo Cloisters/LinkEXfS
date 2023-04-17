@@ -29,5 +29,5 @@ When you run the script, you will be prompted to enter the website URL and selec
     Find parameters
     Enumerate directories
     Enumerate subdomains
-![alt text](https://github.com/Cloisters/Scon/blob/main/S.png?raw=true)
+![alt text](https://github.com/Cloisters/LinkEXfS/blob/main/S.jpg?raw=true)
 
